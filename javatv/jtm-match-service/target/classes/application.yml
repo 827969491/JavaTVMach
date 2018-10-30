@@ -1,6 +1,18 @@
-eureka:
+spring:
+  security:
+    user:
+      name: javatv
+      password: china2018no1
+  application:
+    name: jtm-match-service
+server: 
+  port: 9000
+eureka: 
   instance:
     hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url: 
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:9000/eureka/
+      
