@@ -6,6 +6,15 @@
   top:0;
   content: '';
 }
+
+@font-face{
+  font-family: 'my-font';
+  src: url('../font/hyxuejunJ.ttf');
+}
+body{
+  background-color: #000;
+
+}
 .over-text(){
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -55,17 +64,17 @@
 }
 .text {
   position: absolute;
-  width: 30px;
+  width: 50px;
   left: 50%;
   transition: all .3s ease;
   margin-left: -15px;
   overflow: hidden;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   top: 35%;
   letter-spacing: 1px;
-  color:#333
-  /* margin-top: -60px; */
+  color:#333;
+  font-family: 'my-font'
 }
 .mask{
   position: fixed;
@@ -117,4 +126,41 @@
 @keyframes animate {
   from {background-position: -100px;}
   to {background-position: 100px;}
+}
+
+
+.personal{
+  min-height: 500px;
+}
+
+.ig{
+  position: absolute;
+  top :0;
+  width: 150px;;
+  padding-left: 50px;
+  z-index: 445;
+  text-align: center;
+  top: 25%;
+  right: 30px;
+  p{
+    font-size: 60px;
+    float: left;
+    width: 42px;
+    letter-spacing: 1px;
+    color :#fff;
+    font-family: 'my-font'
+
+  }
+  p:nth-of-type(2){
+    position: relative;
+    top:215px;
+    left: 10px;
+  }
+  p:nth-of-type(3){
+    position: relative;
+    top: 450px;
+    left: 20px;
+    width: 16px;;
+    font-size: 14px;
+  }
 }

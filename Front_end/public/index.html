@@ -20,13 +20,26 @@
   <section class="mask no-active">
       <div class="box active">
           <p id="text"  class="clip text ">登峰造极境</p>
-          
         </div>
   </section>
-
+<!-- 视频 start -->
   <section class="banner">
-    <video id='video' src="video/rise.MP4"  controlsList="nodownload" ></video>
+      <div class="ig">
+          <p>不落青云</p>
+          <p>
+              不斩无名
+          </p>
+          <p>
+              IG冲冲冲！
+          </p>
+      </div>
+    <video id='video' style=" object-fit: fill" src="video/rise.MP4"  controlsList="nodownload" ></video>
   </section>
+<!-- 视频 end -->
+
+<section class="personal">
+
+</section>
 
   <script src="js/jquery-1.11.3.js"></script>
   <script src="js/my.js"></script>
@@ -39,7 +52,7 @@
     window.onload = function(){
       setTimeout(()=>{
         $(".mask").addClass("v-active")
-        // $('#video').trigger('play');
+        $('#video').trigger('play');
         $(".text").css({'color':'#fff'})
       },3000)
 
