@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>javatv</groupId>
-  <artifactId>jtm-match-service</artifactId>
+  <artifactId>jtm-eureka-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>jtm-match-service</name>
   <url>http://maven.apache.org</url>

@@ -8,7 +8,6 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * Hello world!
  *
  */
-@EnableEurekaServer
 @SpringBootApplication
 public class MatchServiceApplication 
 {
