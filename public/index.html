@@ -1,0 +1,53 @@
+<!-- 
+ * @Name: 14k 
+ * @Date: 2018-10-30 10:44:01 
+ * @Last Modified by:   14k 
+ * @Last Modified time: 2018-10-30 10:44:01 
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <link rel="stylesheet" href="css/my.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>首页</title>
+</head>
+<body>
+
+  <section class="mask no-active">
+      <div class="box active">
+          <p id="text"  class="clip text ">登峰造极境</p>
+          
+        </div>
+  </section>
+
+  <section class="banner">
+    <video id='video' src="video/rise.MP4"  controlsList="nodownload" ></video>
+  </section>
+
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/my.js"></script>
+
+  <script>
+    var eleText = document.getElementById('text');
+    clipPath(eleText);
+
+
+    window.onload = function(){
+      setTimeout(()=>{
+        $(".mask").addClass("v-active")
+        // $('#video').trigger('play');
+        $(".text").css({'color':'#fff'})
+      },3000)
+
+       setTimeout(()=>{
+        $(".mask").css({'display':'none'})
+      },5000)
+}
+
+  </script>
+</body>
+</html>
