@@ -7,60 +7,131 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
   <link rel="stylesheet" href="css/my.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <title>首页</title>
 </head>
 <body>
 
   <section class="mask no-active">
-      <div class="box active">
-          <p id="text"  class="clip text ">登峰造极境</p>
-        </div>
+    <div class="box active">
+      <p id="text" class="clip text ">登峰造极境</p>
+    </div>
   </section>
-<!-- 视频 start -->
+  <!-- 视频 start -->
   <section class="banner">
-      <div class="ig">
-          <p>不落青云</p>
-          <p>
-              不斩无名
-          </p>
-          <p>
-              IG冲冲冲！
-          </p>
-      </div>
-    <video id='video' style=" object-fit: fill" src="video/rise.MP4"  controlsList="nodownload" ></video>
+    <div class="ig">
+      <p>不落青云</p>
+      <p>
+        不斩无名
+      </p>
+      <p>
+        IG冲冲冲！
+      </p>
+    </div>
+    <video id='video'  loop="loop"   style=" object-fit: fill" src="video/rise.MP4" controlsList="nodownload"></video>
   </section>
-<!-- 视频 end -->
+  <!-- 视频 end -->
 
-<section class="personal">
+  <section class="personal">
 
-</section>
+    <div class="title">
+      <h3>个人排行</h3>
+      <p>solo</p>
+    </div>
+      <!-- Swiper -->
+      <div id="slide-personal" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <p><span style="background-image:url('imgs/AQ.png')" class="user-imgs"></span></p>
+                    <p> 14k</p>
+                    <p>
+                      KDA: <span>5.66</span>
+                    </p>
+                    <p class="heros">
+                      最常使用英雄: <span>图标</span><span>图标</span><span>图标</span>
+                    </p>
+                    <p>
+                      参赛场数: <a href="#">10</a> <span>   胜率:50%</span>
+                    </p>
+   
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <p><span style="background-image:url('imgs/AQ.png')" class="user-imgs"></span></p>
+                    <p> 14k</p>
+                    <p>
+                      KDA: <span>5.66</span>
+                    </p>
+                    <p class="heros">
+                      最常使用英雄: <span>图标</span><span>图标</span><span>图标</span>
+                    </p>
+                    <p>
+                      参赛场数: <a href="#">10</a> <span>   胜率:50%</span>
+                    </p>
+   
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+          </div>
+              <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+        </div>
+  
+
+  </section>
 
   <script src="js/jquery-1.11.3.js"></script>
   <script src="js/my.js"></script>
+  <script src="js/swiper.min.js"></script>
 
   <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
     var eleText = document.getElementById('text');
     clipPath(eleText);
 
 
-    window.onload = function(){
-      setTimeout(()=>{
+    window.onload = function () {
+      setTimeout(() => {
         $(".mask").addClass("v-active")
         $('#video').trigger('play');
-        $(".text").css({'color':'#fff'})
-      },3000)
+        $(".text").css({
+          'color': '#fff'
+        })
+      }, 3000)
 
-       setTimeout(()=>{
-        $(".mask").css({'display':'none'})
-      },5000)
-}
-
+      setTimeout(() => {
+        $(".mask").css({
+          'display': 'none'
+        })
+      }, 5000)
+    }
   </script>
 </body>
+
 </html>
