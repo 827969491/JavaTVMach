@@ -1,8 +1,4 @@
 spring: 
-  security: 
-    user: 
-      name: javatv
-      password: china2018no1
   application: 
     name: jtm-match-service
 server: 
@@ -14,5 +10,5 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url: 
-      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:9000/eureka/
+      defaultZone: http://${eureka.instance.hostname}:9000/eureka/
       

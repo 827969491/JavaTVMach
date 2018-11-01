@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/827969491/JavaTVMach.git
-          search-paths: config-repo
+          search-paths: jtm/config-repo
           username: 
           password: 
         default-label: master
@@ -16,5 +16,5 @@ spring:
 eureka: 
   client: 
     service-url: 
-      defaultZone: http://javatv:china2018no1@localhost:9000/eureka/
+      defaultZone: http://localhost:9000/eureka/
         
