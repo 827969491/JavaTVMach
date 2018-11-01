@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/827969491/JavaTVMach.git
-          search-paths: jtm/config-repo
+          search-paths: config-repo
           username: 
           password: 
         default-label: master
