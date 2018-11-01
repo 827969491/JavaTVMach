@@ -1,6 +1,6 @@
 server:
   port: 9001
-spring:
+spring: 
   application:
     name: jtm-config-service
   cloud:
@@ -13,4 +13,8 @@ spring:
           password: 
         default-label: master
       label: master
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://javatv:china2018no1@localhost:9000/eureka/
         

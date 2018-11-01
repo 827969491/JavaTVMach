@@ -1,5 +1,12 @@
 server:
-  port: ${jtm.server.port}
-spring:
+  port: 9002
+spring: 
   application:
-    name: ${jtm.application.name}
+    name: jtm-query-service
+eureka: 
+  server:
+    name: javatv
+    password: china2018no1
+  client: 
+    service-url: 
+      defaultZone: http://${eureka.server.username}:${eureka.server.password}@localhost:9000/eureka/

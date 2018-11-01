@@ -1,9 +1,9 @@
-spring:
-  security:
-    user:
+spring: 
+  security: 
+    user: 
       name: javatv
       password: china2018no1
-  application:
+  application: 
     name: jtm-match-service
 server: 
   port: 9000

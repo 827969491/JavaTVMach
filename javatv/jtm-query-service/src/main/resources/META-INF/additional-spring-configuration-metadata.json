@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "eureka.server.name",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.server.name'"
+  },
+  {
+    "name": "eureka.server.password",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.server.password'"
+  },
+  {
+    "name": "eureka.client",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.client'"
+  }
+]}
