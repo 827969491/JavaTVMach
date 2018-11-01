@@ -1,19 +1,19 @@
-package org.jtm.match.service;
+package org.jtm.config.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
  * Hello world!
  *
  */
-@EnableEurekaServer
+@EnableConfigServer
 @SpringBootApplication
-public class MatchServiceApplication 
+public class ConfigApplication 
 {
     public static void main( String[] args )
     {
-    	 SpringApplication.run(MatchServiceApplication.class, args);
+    	SpringApplication.run(ConfigApplication.class, args);
     }
 }

@@ -9,6 +9,7 @@
 
   	<module>jtm-match-service</module>
     <module>jtm-query-service</module>
+    <module>jtm-config-service</module>
   </modules>
   	
   	<parent>

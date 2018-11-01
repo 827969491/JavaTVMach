@@ -1,0 +1,16 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: jtm-config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/827969491/JavaTVMach.git
+          search-paths: config-repo
+          username: 
+          password: 
+        default-label: master
+      label: master
+        

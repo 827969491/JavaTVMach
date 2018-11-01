@@ -1,0 +1,5 @@
+server:
+  port: ${jtm.server.port}
+spring:
+  application:
+    name: ${jtm.application.name}
